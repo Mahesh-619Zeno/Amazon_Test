@@ -163,3 +163,24 @@ Session ID: 4915b9c1a272a9f1f745bc20e16eaa78
 13:30:51.198 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
 13:30:53.455 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
 13:30:53.456 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
+16:14:09.605 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+16:14:16.282 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+16:14:18.582 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+16:14:18.582 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
+16:14:21.910 [main] INFO  testCases.TC_002 - ***** Started TC_002 *****
+16:14:41.685 [main] INFO  testCases.TC_002 - ***** Added items to cart *****
+16:14:43.498 [main] INFO  testCases.TC_002 - ***** Ended TC_002 *****
+16:14:46.138 [main] INFO  testCases.TC_003 - ***** Started TC_003 *****
+16:14:46.161 [main] ERROR testCases.TC_003 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+16:14:49.221 [main] INFO  testCases.TC_004 - ***** Started TC_004 *****
+16:14:55.082 [main] INFO  testCases.TC_004 - ***** added item to the cart *****
+16:15:05.907 [main] INFO  testCases.TC_004 - ***** Successfully updated the item count *****
+16:15:05.907 [main] INFO  testCases.TC_004 - ***** Ended TC_004 *****
+16:15:09.187 [main] INFO  testCases.TC_005 - ***** Started TC_005 *****
+16:15:15.165 [main] INFO  testCases.TC_005 - ***** added item to the cart *****
+16:15:28.602 [main] INFO  testCases.TC_005 - ***** Successfully added item to Save For Later *****
+16:15:28.602 [main] INFO  testCases.TC_005 - ***** Ended TC_005 *****
+16:15:31.673 [main] INFO  testCases.TC_006 - ***** Started TC_006 *****
+16:15:39.016 [main] INFO  testCases.TC_006 - ***** added items to the cart *****
+16:15:41.196 [main] INFO  testCases.TC_006 - ***** Verified subtotal and item count on the cart *****
+16:15:41.196 [main] INFO  testCases.TC_006 - ***** Ended TC_006 *****

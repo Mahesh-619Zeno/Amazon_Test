@@ -44,8 +44,10 @@ public class TC_004 extends BaseClass {
 				s.updateItemCount(productTitle);
 				Thread.sleep(2000);
 			}
-			Assert.assertEquals(s.getItemCount(productTitle),5);
 			logger.info("***** Successfully updated the item count *****");
+			Assert.assertEquals(s.getItemCount(productTitle),s.getTotalCartItemsCount());
+			Assert.assertEquals(s.getPriceOfItem(productTitle),s.getSubTotalPriceOfItems());
+			logger.info("***** Verified the subtotal price and count *****");
 			logger.info("***** Ended TC_004 *****");
 		}
 		
