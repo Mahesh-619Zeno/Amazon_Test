@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-02T13:30:40 IST" name="Suite" finished-at="2025-05-02T13:30:54 IST" duration-ms="13199">
+    <groups>
+      <group name="Sanity">
+        <method signature="TC_001.testAddTocart()[pri:1, instance:testCases.TC_001@1f2586d6]" name="testAddTocart" class="testCases.TC_001"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TC_001.testAddTocart()[pri:1, instance:testCases.TC_001@1f2586d6]" name="testAddTocart" class="testCases.TC_001"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2025-05-02T13:30:40 IST" name="Test1" finished-at="2025-05-02T13:30:54 IST" duration-ms="13199">
+      <class name="testCases.TC_001">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_001@1f2586d6]" started-at="2025-05-02T13:30:41 IST" name="setup" finished-at="2025-05-02T13:30:44 IST" duration-ms="3586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddTocart()[pri:1, instance:testCases.TC_001@1f2586d6]" started-at="2025-05-02T13:30:44 IST" name="testAddTocart" finished-at="2025-05-02T13:30:53 IST" duration-ms="8681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddTocart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001@1f2586d6]" started-at="2025-05-02T13:30:53 IST" name="tearDown" finished-at="2025-05-02T13:30:54 IST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_001 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

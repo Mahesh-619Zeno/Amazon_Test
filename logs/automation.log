@@ -1,0 +1,165 @@
+20:03:50.655 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+20:03:50.675 [main] ERROR testCases.TC_001 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+20:04:00.587 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+20:04:00.603 [main] ERROR testCases.TC_001 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+20:04:19.957 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+20:04:25.649 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+20:04:25.682 [main] ERROR testCases.TC_001 - Testcase Failed...
+20:04:25.685 [main] ERROR testCases.TC_001 - invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.49)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f506888b7a168fa02067deda15378940, findElement {using=id, value=nav-cart}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.49, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\mahes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63558}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63558/devtoo..., se:cdpVersion: 136.0.7103.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f506888b7a168fa02067deda15378940
+20:11:22.891 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+20:11:28.747 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+20:11:28.782 [main] ERROR testCases.TC_001 - Testcase Failed...
+20:11:28.782 [main] ERROR testCases.TC_001 - invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.49)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc6bdddada8571ee82298be6712c2ff6, findElement {using=id, value=nav-cart}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.49, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\mahes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63848/devtoo..., se:cdpVersion: 136.0.7103.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc6bdddada8571ee82298be6712c2ff6
+20:12:32.561 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+20:12:48.191 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+20:12:48.213 [main] ERROR testCases.TC_001 - Testcase Failed...
+20:14:28.829 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+20:14:45.519 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+20:14:45.562 [main] ERROR testCases.TC_001 - Testcase Failed...
+20:14:45.568 [main] ERROR testCases.TC_001 - org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.49)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4915b9c1a272a9f1f745bc20e16eaa78, findElement {value=nav-cart, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.49, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\mahes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56074/devtoo..., se:cdpVersion: 136.0.7103.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4915b9c1a272a9f1f745bc20e16eaa78
+21:34:58.961 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+21:35:04.837 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+21:35:07.551 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+21:35:07.551 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
+21:35:10.703 [main] INFO  testCases.TC_002 - ***** Started TC_002 *****
+21:35:31.090 [main] INFO  testCases.TC_002 - ***** Added items to cart *****
+21:35:33.023 [main] INFO  testCases.TC_002 - ***** Ended TC_002 *****
+21:35:36.467 [main] INFO  testCases.TC_006 - ***** Started TC_006 *****
+21:35:44.295 [main] INFO  testCases.TC_006 - ***** added items to the cart *****
+21:35:46.288 [main] INFO  testCases.TC_006 - ***** Verified subtotal and item count on the cart *****
+21:35:46.288 [main] INFO  testCases.TC_006 - ***** Ended TC_006 *****
+21:43:05.222 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+21:43:05.237 [main] ERROR testCases.TC_001 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+10:34:07.607 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+10:34:14.673 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+10:34:17.213 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+10:34:17.214 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
+10:43:38.388 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+10:43:45.445 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+10:43:47.868 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+10:43:47.868 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
+10:43:52.542 [main] INFO  testCases.TC_002 - ***** Started TC_002 *****
+10:44:14.018 [main] INFO  testCases.TC_002 - ***** Added items to cart *****
+10:44:16.152 [main] INFO  testCases.TC_002 - ***** Ended TC_002 *****
+10:44:19.542 [main] INFO  testCases.TC_006 - ***** Started TC_006 *****
+10:44:19.567 [main] ERROR testCases.TC_006 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+10:49:57.382 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+10:49:57.407 [main] ERROR testCases.TC_001 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+10:50:00.796 [main] INFO  testCases.TC_002 - ***** Started TC_002 *****
+10:50:00.807 [main] ERROR testCases.TC_002 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+10:50:04.125 [main] INFO  testCases.TC_003 - ***** Started TC_003 *****
+10:50:04.140 [main] ERROR testCases.TC_003 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+10:50:08.562 [main] INFO  testCases.TC_004 - ***** Started TC_004 *****
+10:50:15.001 [main] INFO  testCases.TC_004 - ***** added item to the cart *****
+10:50:26.490 [main] INFO  testCases.TC_004 - ***** Successfully updated the item count *****
+10:50:26.490 [main] INFO  testCases.TC_004 - ***** Ended TC_004 *****
+10:50:30.561 [main] INFO  testCases.TC_005 - ***** Started TC_005 *****
+10:50:30.578 [main] ERROR testCases.TC_005 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+10:50:34.459 [main] INFO  testCases.TC_006 - ***** Started TC_006 *****
+10:50:43.268 [main] INFO  testCases.TC_006 - ***** added items to the cart *****
+10:50:45.719 [main] INFO  testCases.TC_006 - ***** Verified subtotal and item count on the cart *****
+10:50:45.719 [main] INFO  testCases.TC_006 - ***** Ended TC_006 *****
+10:55:11.471 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+10:55:18.595 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+10:55:20.787 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+10:55:20.787 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
+10:55:26.592 [main] INFO  testCases.TC_002 - ***** Started TC_002 *****
+10:55:47.990 [main] INFO  testCases.TC_002 - ***** Added items to cart *****
+10:55:49.982 [main] INFO  testCases.TC_002 - ***** Ended TC_002 *****
+10:55:53.724 [main] INFO  testCases.TC_003 - ***** Started TC_003 *****
+10:55:53.753 [main] ERROR testCases.TC_003 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+10:55:57.292 [main] INFO  testCases.TC_004 - ***** Started TC_004 *****
+10:55:57.314 [main] ERROR testCases.TC_004 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+10:56:01.427 [main] INFO  testCases.TC_005 - ***** Started TC_005 *****
+10:56:09.172 [main] INFO  testCases.TC_005 - ***** added item to the cart *****
+10:56:22.917 [main] INFO  testCases.TC_005 - ***** Successfully added item to Save For Later *****
+10:56:22.917 [main] INFO  testCases.TC_005 - ***** Ended TC_005 *****
+10:56:26.425 [main] INFO  testCases.TC_006 - ***** Started TC_006 *****
+10:56:26.443 [main] ERROR testCases.TC_006 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+11:24:33.984 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+11:24:34.001 [main] ERROR testCases.TC_001 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+11:24:53.310 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+11:24:53.330 [main] ERROR testCases.TC_001 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+11:25:08.263 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+11:25:14.394 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+11:25:16.485 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+11:25:16.485 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
+12:27:17.098 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+12:27:17.132 [main] ERROR testCases.TC_001 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+12:27:20.189 [main] INFO  testCases.TC_002 - ***** Started TC_002 *****
+12:27:20.210 [main] ERROR testCases.TC_002 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+12:27:23.144 [main] INFO  testCases.TC_003 - ***** Started TC_003 *****
+12:27:23.160 [main] ERROR testCases.TC_003 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+12:27:26.614 [main] INFO  testCases.TC_004 - ***** Started TC_004 *****
+12:27:33.133 [main] INFO  testCases.TC_004 - ***** added item to the cart *****
+12:27:43.786 [main] INFO  testCases.TC_004 - ***** Successfully updated the item count *****
+12:27:43.786 [main] INFO  testCases.TC_004 - ***** Ended TC_004 *****
+12:27:46.717 [main] INFO  testCases.TC_005 - ***** Started TC_005 *****
+12:27:46.730 [main] ERROR testCases.TC_005 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+12:27:49.705 [main] INFO  testCases.TC_006 - ***** Started TC_006 *****
+12:27:49.718 [main] ERROR testCases.TC_006 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+12:41:42.955 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+12:41:49.962 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+12:41:52.345 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+12:41:52.345 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
+12:41:55.601 [main] INFO  testCases.TC_002 - ***** Started TC_002 *****
+12:42:15.504 [main] INFO  testCases.TC_002 - ***** Added items to cart *****
+12:42:17.275 [main] INFO  testCases.TC_002 - ***** Ended TC_002 *****
+12:42:19.934 [main] INFO  testCases.TC_003 - ***** Started TC_003 *****
+12:42:19.948 [main] ERROR testCases.TC_003 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+12:42:22.371 [main] INFO  testCases.TC_004 - ***** Started TC_004 *****
+12:42:22.379 [main] ERROR testCases.TC_004 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+12:42:25.456 [main] INFO  testCases.TC_005 - ***** Started TC_005 *****
+12:42:31.247 [main] INFO  testCases.TC_005 - ***** added item to the cart *****
+12:42:44.500 [main] INFO  testCases.TC_005 - ***** Successfully added item to Save For Later *****
+12:42:44.500 [main] INFO  testCases.TC_005 - ***** Ended TC_005 *****
+12:42:47.019 [main] INFO  testCases.TC_006 - ***** Started TC_006 *****
+12:42:47.031 [main] ERROR testCases.TC_006 - Assertion Failed :- java.lang.AssertionError: expected [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] but found [Amazon.in]
+13:23:48.414 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+13:23:55.077 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+13:23:57.385 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+13:23:57.386 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
+13:24:43.015 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+13:24:49.763 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+13:24:49.801 [main] ERROR testCases.TC_001 - Testcase Failed...
+13:27:36.101 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+13:27:42.582 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+13:27:44.594 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+13:27:44.595 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
+13:27:52.500 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+13:27:58.832 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+13:27:58.869 [main] ERROR testCases.TC_001 - Testcase Failed...
+13:29:03.594 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+13:29:09.380 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+13:29:09.464 [main] ERROR testCases.TC_001 - Testcase Failed...
+13:30:05.641 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+13:30:11.258 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+13:30:11.407 [main] ERROR testCases.TC_001 - Testcase Failed...
+13:30:44.803 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+13:30:51.198 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+13:30:53.455 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+13:30:53.456 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****
