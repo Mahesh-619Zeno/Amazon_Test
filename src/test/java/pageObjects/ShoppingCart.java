@@ -54,7 +54,6 @@ public class ShoppingCart extends BasePage {
     	itemName = str.escapeForXPath(itemName);
     	By itemPriceXpath = By.xpath("//*[@id='sc-active-cart']//*[text()="+itemName+"]/../../../../../../../..//*[contains(@class,'sc-product-price')]/span[2]");
     	String txt = readText(itemPriceXpath);
-    	
 		return (int) Double.parseDouble(txt.replaceAll("[^\\d.]", ""));
 	}
     

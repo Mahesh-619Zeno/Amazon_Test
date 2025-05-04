@@ -11,11 +11,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
 
-	WebDriver driver;
+	static WebDriver driver;
 	WebDriverWait wait;
 	
 	public BasePage(WebDriver driver) {
-		this.driver = driver;
+		BasePage.driver = driver;
 		PageFactory.initElements(driver, this);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
@@ -40,5 +40,10 @@ public class BasePage {
     public boolean isExist(By by) {
     	return !driver.findElements(by).isEmpty();
     }
+    //refresh
+    public static void refresh() {
+    	driver.navigate().refresh();
+    }
+    
 	
 }

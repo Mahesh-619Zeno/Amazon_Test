@@ -18,18 +18,18 @@ public class TC_001 extends BaseClass {
 			
 			String pageTitle = pr.getProperty("pagetitle");
 		    String CartHeader = pr.getProperty("cartheader");
-			String pName = pr.getProperty("product4");
+			String itemName = pr.getProperty("item1");
 			
 			Assert.assertEquals(driver.getTitle(),pageTitle);
 			
 			ProductSearch p = new ProductSearch(driver);
-			p.enterProductName(pName);
+			p.enterProductName(itemName);
 			p.clickOnSearch();
 			System.out.println("Total search result found: "+p.totalSearchResult());
-			String productTitle = p.getSearhResultTitle(1);
+			String productTitle = p.getitemTitlebyName(itemName);
 			System.out.println("Search item title: "+productTitle);
 		
-			p.addToCart(1);
+			p.addToCartByName(productTitle);
 			Thread.sleep(1000);
 			logger.info("***** Added item to cart *****");
 			

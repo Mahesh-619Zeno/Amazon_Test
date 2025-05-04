@@ -27,10 +27,10 @@ public class TC_005 extends BaseClass {
 			p.enterProductName(pName);
 			p.clickOnSearch();
 			System.out.println("Total search result found: "+p.totalSearchResult());
-			String productTitle = p.getSearhResultTitle(1);
+			String productTitle = p.getItemTitlebyIndex(1);
 			System.out.println("Search item title: "+productTitle);
 		
-			p.addToCart(1);
+			p.addToCartByIndex(1);
 			Thread.sleep(1000);
 			logger.info("***** added item to the cart *****");
 			ShoppingCart s = new ShoppingCart(driver);
