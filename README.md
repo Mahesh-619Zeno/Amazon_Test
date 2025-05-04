@@ -1,2 +1,2 @@
 # Amazon001
-automation framework for amazon e-cart.
+automation hybrid framework for amazon e-cart with multiple testcases.
