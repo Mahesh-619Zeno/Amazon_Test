@@ -31,7 +31,6 @@ public class TC_005 extends BaseClass {
 			System.out.println("Search item title: "+productTitle);
 		
 			p.addToCartByIndex(1);
-			Thread.sleep(1000);
 			logger.info("***** added item to the cart *****");
 			ShoppingCart s = new ShoppingCart(driver);
 			s.clickOnCart();
@@ -39,7 +38,6 @@ public class TC_005 extends BaseClass {
 			Assert.assertTrue(s.isCartItemExist(productTitle));
 			
 			s.clickOnSaveForLater(productTitle);
-			Thread.sleep(1000);
 			Assert.assertFalse(s.isCartItemExist(productTitle));
 			Assert.assertTrue(s.isSaveForLaterItemExist(productTitle));
 			logger.info("***** Successfully added item to Save For Later *****");

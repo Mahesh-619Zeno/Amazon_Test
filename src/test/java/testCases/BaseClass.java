@@ -14,6 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -36,6 +37,9 @@ public class BaseClass {
 		FileReader file = new FileReader("./testdata/config.properties");
 		pr = new Properties();
 		pr.load(file);
+		
+		/*ChromeOptions options = new ChromeOptions();
+		options.addArguments("user-data-dir=/path/to/your/custom/profile");*/
 		
 		switch(br.toLowerCase()) {
 		case "chrome": driver = new ChromeDriver(); break;

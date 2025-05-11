@@ -30,7 +30,6 @@ public class TC_004 extends BaseClass {
 			System.out.println("Search item title: "+productTitle);
 		
 			p.addToCartByName(productTitle);
-			Thread.sleep(1000);
 			logger.info("***** added item to the cart *****");
 			
 			ShoppingCart s = new ShoppingCart(driver);
@@ -40,7 +39,6 @@ public class TC_004 extends BaseClass {
 			
 			for(int i=1;i<itemCount;i++) {
 				s.updateItemCount(productTitle);
-				Thread.sleep(2000);
 			}
 			
 			totalprice += (s.getPriceOfItem(productTitle) * itemCount);

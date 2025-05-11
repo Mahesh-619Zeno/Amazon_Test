@@ -31,7 +31,6 @@ public class TC_002 extends BaseClass {
 			for(int i=1;i<=productTitle.length;i++) {
 				productTitle[i-1]  = p.getItemTitlebyIndex(i);
 				p.addToCartByIndex(i);
-				Thread.sleep(2000);
 			}
 			logger.info("***** Added items to cart *****");
 			

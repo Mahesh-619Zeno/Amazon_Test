@@ -3,6 +3,8 @@ package pageObjects;
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
 import utilities.HandelDoubleAndSingleQuotationInXpath;
 
 public class ShoppingCart extends BasePage {
@@ -12,13 +14,15 @@ public class ShoppingCart extends BasePage {
 	}
 	
 	HandelDoubleAndSingleQuotationInXpath str = new HandelDoubleAndSingleQuotationInXpath();
-    
+    By popUpItemAdded = By.xpath("//*[text()='Item Added']");
 	By btnNavCart = By.id("nav-cart");
+	By lblUpdatingQuatity = By.xpath("//*[aria-valuetext='Updating quantity']");
 	By lblShoppingCartHeader = By.id("sc-active-items-header");
 	By lblCartTotalItemCount = By.id("sc-subtotal-label-buybox");
 	By lblCartSubTotalPrice = By.xpath("//*[@id='sc-subtotal-amount-buybox']/span");
 	
 	public void clickOnCart() {
+		Assert.assertTrue(waitInvisibility(popUpItemAdded));
 		click(btnNavCart);
 	}
 	
@@ -32,10 +36,11 @@ public class ShoppingCart extends BasePage {
 		return isExist(itemXpath);
 	}
 	
-	public void removeCartItem(String itemName) {
+	public void removeCartItemAndVerify(String itemName) {
 		itemName = str.escapeForXPath(itemName);
 		By itemXpath = By.xpath("//*[@id='sc-active-cart']//*[text()="+itemName+"]/../../../../../../../..//*[@value='Delete']");
 		click(itemXpath);
+		Assert.assertTrue(waitUntilRemoved(itemXpath));
 	}
 	
 	public int getItemCount(String itemName) {
@@ -48,6 +53,7 @@ public class ShoppingCart extends BasePage {
 		itemName = str.escapeForXPath(itemName);
 		By itemCountPlusIconXpath = By.xpath("//*[@id='sc-active-cart']//*[text()="+itemName+"]/../../../../../../../..//*[@data-a-selector='increment-icon']"); 
 		click(itemCountPlusIconXpath);
+		waitInvisibility(lblUpdatingQuatity);
 	}
 	
 	public int getPriceOfItem(String itemName) {
@@ -69,6 +75,7 @@ public class ShoppingCart extends BasePage {
 		itemName = str.escapeForXPath(itemName);
 		By itemSaveForLaterXpath = By.xpath("//*[@id='sc-active-cart']//*[text()="+itemName+"]/../../../../../../../..//*[@value='Save for later']");
 		click(itemSaveForLaterXpath);
+		Assert.assertTrue(waitUntilRemoved(itemSaveForLaterXpath));
 	}
 	
 	public boolean isSaveForLaterItemExist(String itemName) {

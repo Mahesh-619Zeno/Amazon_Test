@@ -12,13 +12,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_003">
+      <class name="testCases.TC_006">
         <methods>
-          <include name="testRemoveCartItem"/>
           <include name="setup"/>
+          <include name="testCartitemsSubtotal"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.TC_003 -->
+      </class> <!-- testCases.TC_006 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

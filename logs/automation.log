@@ -1,11 +1,4 @@
-13:10:59.623 [main] INFO  testCases.TC_004 - ***** Started TC_004 *****
-13:11:06.153 [main] INFO  testCases.TC_004 - ***** added item to the cart *****
-13:11:09.891 [main] INFO  testCases.TC_004 - ***** Successfully updated the item count *****
-13:11:28.507 [main] INFO  testCases.TC_004 - ***** Started TC_004 *****
-13:11:37.334 [main] INFO  testCases.TC_004 - ***** added item to the cart *****
-13:11:45.133 [main] INFO  testCases.TC_004 - ***** Successfully updated the item count *****
-13:11:47.274 [main] INFO  testCases.TC_004 - ***** Started TC_004 *****
-13:11:54.950 [main] INFO  testCases.TC_004 - ***** added item to the cart *****
-13:12:03.089 [main] INFO  testCases.TC_004 - ***** Successfully updated the item count *****
-13:12:06.905 [main] INFO  testCases.TC_004 - ***** Verified the subtotal price and count *****
-13:12:06.905 [main] INFO  testCases.TC_004 - ***** Ended TC_004 *****
+12:42:52.231 [main] INFO  testCases.TC_001 - ***** Started TC_001 *****
+12:42:59.117 [main] INFO  testCases.TC_001 - ***** Added item to cart *****
+12:43:03.982 [main] INFO  testCases.TC_001 - ***** Verified cart item *****
+12:43:03.983 [main] INFO  testCases.TC_001 - ***** Ended TC_001 *****

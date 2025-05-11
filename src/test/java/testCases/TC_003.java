@@ -31,7 +31,6 @@ public class TC_003 extends BaseClass  {
 			System.out.println("Search item title: "+productTitle);
 		
 			p.addToCartByName(productTitle);
-			Thread.sleep(1000);
 			logger.info("***** item added to the cart *****");
 			
 			ShoppingCart s = new ShoppingCart(driver);
@@ -39,8 +38,7 @@ public class TC_003 extends BaseClass  {
 			Assert.assertEquals(s.getShoppingCartHeader(),CartHeader);
 			Assert.assertTrue(s.isCartItemExist(productTitle));
 			
-			s.removeCartItem(productTitle);
-			Thread.sleep(2000);
+			s.removeCartItemAndVerify(productTitle);
 			logger.info("***** Successfully removed item from the cart *****");
 			Assert.assertFalse(s.isCartItemExist(productTitle));
 			logger.info("***** Ended TC_003 *****");

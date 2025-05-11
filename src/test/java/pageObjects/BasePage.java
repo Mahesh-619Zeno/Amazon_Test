@@ -1,6 +1,7 @@
 package pageObjects;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,12 +18,12 @@ public class BasePage {
 	public BasePage(WebDriver driver) {
 		BasePage.driver = driver;
 		PageFactory.initElements(driver, this);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 	}
 	
 	//Click
 	public void click(By by) {
-        waitVisibility(by).click();
+		waitClickable(by).click();
     }
     //Write Text
     public void writeText(By by, String text) {
@@ -35,6 +36,18 @@ public class BasePage {
     //Wait
     public WebElement waitVisibility(By by) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+    }
+    //Wait until invisible
+    public Boolean waitInvisibility(By by) {
+        return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+    }
+    //Wait until clickable
+    public WebElement waitClickable(By by) {
+        return wait.until(ExpectedConditions.elementToBeClickable(by));
+    }
+    //Wait until completely removed from DOM
+    public boolean waitUntilRemoved(By by) {
+        return wait.until(ExpectedConditions.numberOfElementsToBe(by, 0)).isEmpty();
     }
     //Element Exists
     public boolean isExist(By by) {

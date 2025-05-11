@@ -13,7 +13,7 @@ public class TC_001 extends BaseClass {
 	void testAddTocart() {
 		
 		try {
-			
+						
 			logger.info("***** Started TC_001 *****");
 			
 			String pageTitle = pr.getProperty("pagetitle");
@@ -30,11 +30,12 @@ public class TC_001 extends BaseClass {
 			System.out.println("Search item title: "+productTitle);
 		
 			p.addToCartByName(productTitle);
-			Thread.sleep(1000);
 			logger.info("***** Added item to cart *****");
 			
 			ShoppingCart s = new ShoppingCart(driver);
 			s.clickOnCart();
+			
+			
 			
 			Assert.assertEquals(s.getShoppingCartHeader(),CartHeader);
 			Assert.assertTrue(s.isCartItemExist(productTitle));
