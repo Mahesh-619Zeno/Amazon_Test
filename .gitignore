@@ -1,1 +1,14 @@
+# Eclipse files
+.settings/
+.project
+.classpath
+
+# Eclipse workspace (never commit)
+.metadata/
+
+# Maven build artifacts
 /target/
+/test-output/
+/test/test-classes/
+/test/surefire-reports/
+/test/maven-status/
