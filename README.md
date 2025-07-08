@@ -1,5 +1,5 @@
 # Amazon001
-automation hybrid framework for amazon e-cart with multiple testcases.
+automation hybrid framework for amazon e-cart with multiple testcases(such as add, update, and remove items).
 
 📚 Tech Stack: Java | Selenium WebDriver | TestNG | Page Object Model (POM) | Data-Driven Testing | Extent Reports
 
