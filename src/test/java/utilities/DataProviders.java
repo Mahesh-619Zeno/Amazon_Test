@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 public class DataProviders {
 	
 	@DataProvider(name="productList")
-	public String [][] getData() throws IOException{
+	public String [][] getProductListDataFromExcel() throws IOException{
 		String path = "./testdata/ProductList.xlsx";
 		
 		ExcelUtility xl = new ExcelUtility(path);
