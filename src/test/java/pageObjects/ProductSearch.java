@@ -31,7 +31,7 @@ public class ProductSearch extends BasePage {
     	click(btnSerchIcon);
     }
     
-    public String totalSearchResult() {
+    public String getSearchResultText() {
     	String result[] = readText(txtSearchResult).split(" ");
         String searchResult = result[2];
 		if(searchResult.chars().anyMatch(Character::isLowerCase)) {
