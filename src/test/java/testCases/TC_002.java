@@ -22,24 +22,24 @@ public class TC_002 extends BaseClass {
 			
 			Assert.assertEquals(driver.getTitle(),pageTitle);
 			
-			ProductSearch p = new ProductSearch(driver);
-			p.enterProductName(pName);
-			p.clickOnSearch();
-			System.out.println("Total search result found: "+p.totalSearchResult());
+			ProductSearch productSearch = new ProductSearch(driver);
+			productSearch.enterProductName(pName);
+			productSearch.clickOnSearch();
+			System.out.println("Total search result found: "+productSearch.totalSearchResult());
 			
 			String [] productTitle = new String[5];
 			for(int i=1;i<=productTitle.length;i++) {
-				productTitle[i-1]  = p.getItemTitlebyIndex(i);
-				p.addToCartByIndex(i);
+				productTitle[i-1]  = productSearch.getItemTitlebyIndex(i);
+				productSearch.addToCartByIndex(i);
 			}
 			logger.info("***** Added items to cart *****");
 			
-			ShoppingCart s = new ShoppingCart(driver);
-			s.clickOnCart();
-			Assert.assertEquals(s.getShoppingCartHeader(),CartHeader);
+			ShoppingCart shoppingCart = new ShoppingCart(driver);
+			shoppingCart.clickOnCart();
+			Assert.assertEquals(shoppingCart.getShoppingCartHeader(),CartHeader);
 			
 			for(int i=0;i<productTitle.length;i++) {
-				Assert.assertTrue(s.isCartItemExist(productTitle[i]));
+				Assert.assertTrue(shoppingCart.isCartItemExist(productTitle[i]));
 			}
 			logger.info("***** Ended TC_002 *****");
 		}
