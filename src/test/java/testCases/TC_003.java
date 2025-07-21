@@ -8,9 +8,6 @@ import pageObjects.ShoppingCart;
 
 //**********Testcase Name - Validate we can remove the items from the cart**********//
 public class TC_003 extends BaseClass  {
-	
-	
-	
 	@Test(priority=1, groups = { "Regression" })
 	void testRemoveCartItem() throws InterruptedException {
 		
