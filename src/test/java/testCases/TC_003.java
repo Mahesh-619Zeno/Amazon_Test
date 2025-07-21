@@ -23,14 +23,14 @@ public class TC_003 extends BaseClass  {
 			
 			Assert.assertEquals(driver.getTitle(),pageTitle);
 			
-			ProductSearch p = new ProductSearch(driver);
-			p.enterProductName(itemName);
-			p.clickOnSearch();
-			System.out.println("Total search result found: "+p.getSearchResultText());
-			String productTitle = p.getitemTitlebyName(itemName);
+			ProductSearch productSearch = new ProductSearch(driver);
+			productSearch.enterProductName(itemName);
+			productSearch.clickOnSearch();
+			System.out.println("Total search result found: "+productSearch.getSearchResultText());
+			String productTitle = productSearch.getitemTitlebyName(itemName);
 			System.out.println("Search item title: "+productTitle);
 		
-			p.addToCartByName(productTitle);
+			productSearch.addToCartByName(productTitle);
 			logger.info("***** item added to the cart *****");
 			
 			ShoppingCart s = new ShoppingCart(driver);
