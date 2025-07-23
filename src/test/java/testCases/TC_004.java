@@ -15,6 +15,7 @@ public class TC_004 extends BaseClass {
 	public void testUpdateCountOfCartItem(String itemName, String quantity ) throws InterruptedException {
 		
 		try {
+
 			
 			logger.info("***** Started TC_004 *****");
 			String pageTitle = pr.getProperty("pagetitle");
@@ -23,13 +24,13 @@ public class TC_004 extends BaseClass {
 			
 			Assert.assertEquals(driver.getTitle(),pageTitle);
 			
-			ProductSearch p = new ProductSearch(driver);
-			p.enterProductName(itemName);
-			p.clickOnSearch();
-			String productTitle = p.getitemTitlebyName(itemName);
+			ProductSearch productSearch = new ProductSearch(driver);
+			productSearch.enterProductName(itemName);
+			productSearch.clickOnSearch();
+			String productTitle = productSearch.getitemTitlebyName(itemName);
 			System.out.println("Search item title: "+productTitle);
 		
-			p.addToCartByName(productTitle);
+			productSearch.addToCartByName(productTitle);
 			logger.info("***** added item to the cart *****");
 			
 			ShoppingCart s = new ShoppingCart(driver);
