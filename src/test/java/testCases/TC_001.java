@@ -10,7 +10,7 @@ public class TC_001 extends BaseClass {
 	
 	
 	@Test(priority=1, groups = { "Sanity", "Regression" })
-	void testAddTocart() {
+	void testSearchAddAndVerifyCart() {
 		
 		try {
 						
