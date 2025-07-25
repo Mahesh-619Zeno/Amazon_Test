@@ -8,7 +8,6 @@ import pageObjects.ShoppingCart;
 //**********Testcase Title - Validate we can search and add to cart.**********//
 public class TC_001 extends BaseClass {
 	
-	
 	@Test(priority=1, groups = { "Sanity", "Regression" })
 	void testSearchAddAndVerifyCart() {
 		
@@ -17,7 +16,7 @@ public class TC_001 extends BaseClass {
 			logger.info("***** Started TC_001 *****");
 			
 			String pageTitle = pr.getProperty("pagetitle");
-		    String CartHeader = pr.getProperty("cartheader");
+		        String CartHeader = pr.getProperty("cartheader");
 			String itemName = pr.getProperty("item1");
 			
 			Assert.assertEquals(driver.getTitle(),pageTitle);
@@ -34,9 +33,7 @@ public class TC_001 extends BaseClass {
 			
 			ShoppingCart s = new ShoppingCart(driver);
 			s.clickOnCart();
-			
-			
-			
+		
 			Assert.assertEquals(s.getShoppingCartHeader(),CartHeader);
 			Assert.assertTrue(s.isCartItemExist(productTitle));
 			logger.info("***** Verified cart item *****");
@@ -53,8 +50,6 @@ public class TC_001 extends BaseClass {
 			Assert.fail();
 		}
 		
-		
-	
 	}
  
 }
