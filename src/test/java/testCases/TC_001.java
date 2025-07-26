@@ -12,23 +12,24 @@ public class TC_001 extends BaseClass {
 	void testSearchAddAndVerifyCart() {
 		
 		try {
+
+					
 						
 			logger.info("***** Started TC_001 *****");
 			
 			String pageTitle = pr.getProperty("pagetitle");
-		        String CartHeader = pr.getProperty("cartheader");
+		    String CartHeader = pr.getProperty("cartheader");
 			String itemName = pr.getProperty("item1");
-			
 			Assert.assertEquals(driver.getTitle(),pageTitle);
 			
-			ProductSearch p = new ProductSearch(driver);
-			p.enterProductName(itemName);
-			p.clickOnSearch();
-			System.out.println("Total search result found: "+p.totalSearchResult());
-			String productTitle = p.getitemTitlebyName(itemName);
+			ProductSearch productSearch = new ProductSearch(driver);
+			productSearch.enterProductName(itemName);
+			productSearch.clickOnSearch();
+			System.out.println("Total search result found: "+productSearch.totalSearchResult());
+			String productTitle = productSearch.getitemTitlebyName(itemName);
 			System.out.println("Search item title: "+productTitle);
 		
-			p.addToCartByName(productTitle);
+			productSearch.addToCartByName(productTitle);
 			logger.info("***** Added item to cart *****");
 			
 			ShoppingCart s = new ShoppingCart(driver);
