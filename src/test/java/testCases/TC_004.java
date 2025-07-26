@@ -47,7 +47,7 @@ public class TC_004 extends BaseClass {
 			subtotalPrice = s.getSubTotalPriceOfItems();
 			subtotalIteams = s.getTotalCartItemsCount();
 			logger.info("***** Successfully updated the item count *****");
-			p.clickOnHomeLogo();
+			productSearch.clickOnHomeLogo();
 		}
 		
 		catch (AssertionError e) {
