@@ -12,9 +12,7 @@ public class TC_001 extends BaseClass {
 	void testSearchAddAndVerifyCart() {
 		
 		try {
-
-					
-						
+		
 			logger.info("***** Started TC_001 *****");
 			
 			String pageTitle = pr.getProperty("pagetitle");
