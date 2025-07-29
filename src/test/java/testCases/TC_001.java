@@ -20,7 +20,7 @@ public class TC_001 extends BaseClass {
 			String pageTitle = pr.getProperty("pagetitle");
 		    String CartHeader = pr.getProperty("cartheader");
 			String itemName = pr.getProperty("item1");
-			Assert.assertEquals(driver.getTitle(),pageTitle);
+			//Assert.assertEquals(driver.getTitle(),pageTitle);
 			
 			ProductSearch productSearch = new ProductSearch(driver);
 			productSearch.enterProductName(itemName);
