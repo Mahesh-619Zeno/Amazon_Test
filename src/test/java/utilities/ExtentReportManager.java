@@ -21,7 +21,6 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import testCases.BaseClass;
 
 public class ExtentReportManager implements ITestListener{
-	
 	public ExtentSparkReporter sparkRepoter;
 	public ExtentReports extent;
 	public ExtentTest test;

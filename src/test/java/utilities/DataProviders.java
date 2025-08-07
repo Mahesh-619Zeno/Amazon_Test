@@ -11,7 +11,6 @@ public class DataProviders {
 		String path = "./testdata/ProductList.xlsx";
 		
 		ExcelUtility xl = new ExcelUtility(path);
-		
 		int totalRows = xl.getRowCount("Sheet1");
 		int totalColumns = xl.getCellCount("Sheet1", 1);
 		

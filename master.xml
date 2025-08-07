@@ -7,7 +7,6 @@
         <include name = "Regression"></include>
     </run>
   </groups>
-  
   <listeners>
       <listener class-name="utilities.ExtentReportManager"/>
   </listeners>

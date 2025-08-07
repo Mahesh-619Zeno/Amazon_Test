@@ -16,7 +16,6 @@ public class TC_004 extends BaseClass {
 		
 		try {
 
-			
 			logger.info("***** Started TC_004 *****");
 			String pageTitle = pr.getProperty("pagetitle");
 		    String CartHeader = pr.getProperty("cartheader");

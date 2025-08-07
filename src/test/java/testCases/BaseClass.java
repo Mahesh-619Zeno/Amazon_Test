@@ -68,7 +68,6 @@ public class BaseClass {
 		File targetFile = new File(targetFilePath);
 		
 		srcFile.renameTo(targetFile);
-		
 		return targetFilePath;
 		
 	}

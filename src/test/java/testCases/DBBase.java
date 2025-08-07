@@ -1,6 +1,5 @@
 public class DBBase {
     private Connection connection;
-
     public DBBase() {
         try {
             this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "user", "password");

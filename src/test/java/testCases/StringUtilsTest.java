@@ -1,6 +1,5 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-
 public class StringUtilsTest {
 
     @Test
@@ -16,4 +15,6 @@ public class StringUtilsTest {
         assertFalse(StringUtils.isValidEmail("testexample.com"), "Invalid email should return false.");
         assertFalse(StringUtils.isValidEmail(null), "Null email should return false.");
     }
+
+    
 }

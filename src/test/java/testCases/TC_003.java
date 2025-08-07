@@ -52,7 +52,5 @@ public class TC_003 extends BaseClass  {
 			Assert.fail();
 		}
 		
-		
-	
 	}
 }

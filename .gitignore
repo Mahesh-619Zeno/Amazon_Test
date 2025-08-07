@@ -12,3 +12,4 @@
 /test/test-classes/
 /test/surefire-reports/
 /test/maven-status/
+.appmodconfig

@@ -12,4 +12,5 @@ public void testCheckout() {
     
     assertTrue(checkoutResult, "Checkout should be successful with valid products in the cart.");
     assertEquals(1200, cartService.getTotalPrice(), "The total price should be the sum of the products.");
+    
 }

@@ -14,8 +14,6 @@ public class TC_002 extends BaseClass {
 	void testAddToCartMultipleItems() throws InterruptedException {
 		
 		try {
-
-
 			
 			logger.info("***** Started TC_002 *****");
 			String pageTitle = pr.getProperty("pagetitle");

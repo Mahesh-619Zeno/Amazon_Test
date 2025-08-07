@@ -10,3 +10,4 @@ public void testRemoveFromCart() {
     assertEquals(0, cartService.getProductCount(), "The cart should be empty after removing the product.");
     assertEquals(0, cartService.getTotalPrice(), "The total price of the cart should be 0 after removal.");
 }
+
