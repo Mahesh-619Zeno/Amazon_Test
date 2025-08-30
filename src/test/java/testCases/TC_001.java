@@ -10,12 +10,6 @@ public class TC_001 extends BaseClass {
 	
 	@Test(priority=1, groups = { "Sanity", "Regression" })
 	void testSearchAddAndVerifyCart() {
-
-
-
-
-		
-		
 		try {
 		
 			logger.info("***** Started TC_001 *****");
@@ -23,12 +17,12 @@ public class TC_001 extends BaseClass {
 			String pageTitle = pr.getProperty("pagetitle");
 		    String CartHeader = pr.getProperty("cartheader");
 			String itemName = pr.getProperty("item1");
-			//Assert.assertEquals(driver.getTitle(),pageTitle);
+			Assert.assertEquals(driver.getTitle(),pageTitle);
 			
 			ProductSearch productSearch = new ProductSearch(driver);
 			productSearch.enterProductName(itemName);
 			productSearch.clickOnSearch();
-			System.out.println("Total search result found: "+productSearch.totalSearchResult());
+			System.out.println("Total search result found: "+productSearch.getSearchResultText());
 			String productTitle = productSearch.getitemTitlebyName(itemName);
 			System.out.println("Search item title: "+productTitle);
 		
