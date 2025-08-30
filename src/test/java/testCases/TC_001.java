@@ -22,7 +22,7 @@ public class TC_001 extends BaseClass {
 			ProductSearch productSearch = new ProductSearch(driver);
 			productSearch.enterProductName(itemName);
 			productSearch.clickOnSearch();
-			//System.out.println("Total search result found: "+productSearch.totalSearchResult());
+			System.out.println("Total search result found: "+productSearch.getSearchResultText());
 			String productTitle = productSearch.getitemTitlebyName(itemName);
 			System.out.println("Search item title: "+productTitle);
 		
