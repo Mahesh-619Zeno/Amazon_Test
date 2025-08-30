@@ -56,10 +56,10 @@ public class TC_006 extends BaseClass {
 			logger.info("***** Ended TC_006 *****");
 		}
 		
-		catch (AssertionError e) {
+		/*catch (AssertionError e) {
 			logger.error("Assertion Failed :- "+ e);
 			Assert.fail();
-		}
+		}*/
 		catch(Exception e) {
 			logger.error("Testcase Failed...");
 			logger.debug("Debug logs...");
