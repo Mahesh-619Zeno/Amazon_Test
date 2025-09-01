@@ -29,7 +29,7 @@ public class TC_002 extends BaseClass {
 			
 			String [] productTitle = new String[5];
 			for(int i=1;i<=productTitle.length;i++) {
-				productTitle[i-1]  = productSearch.getItemTitlebyIndex(i);
+				productTitle[i-1]  = productSearch.getItemTitleByIndex(i);
 				productSearch.addToCartByIndex(i);
 			}
 			logger.info("***** Added items to cart *****");

@@ -26,7 +26,7 @@ public class TC_004 extends BaseClass {
 			ProductSearch productSearch = new ProductSearch(driver);
 			productSearch.enterProductName(itemName);
 			productSearch.clickOnSearch();
-			String productTitle = productSearch.getitemTitlebyName(itemName);
+			String productTitle = productSearch.getItemTitleByName(itemName);
 			System.out.println("Search item title: "+productTitle);
 		
 			productSearch.addToCartByName(productTitle);

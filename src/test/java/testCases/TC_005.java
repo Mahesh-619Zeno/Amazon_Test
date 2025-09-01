@@ -27,7 +27,7 @@ public class TC_005 extends BaseClass {
 			p.enterProductName(pName);
 			p.clickOnSearch();
 			System.out.println("Total search result found: "+p.getSearchResultText());
-			String productTitle = p.getItemTitlebyIndex(1);
+			String productTitle = p.getItemTitleByIndex(1);
 			System.out.println("Search item title: "+productTitle);
 		
 			p.addToCartByIndex(1);

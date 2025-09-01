@@ -4,9 +4,11 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -21,6 +23,20 @@ public class BasePage {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 	}
 	
+    //wait for page load
+    public void waitForPageLoad() {
+        ExpectedCondition<Boolean> pageLoadCondition = driver -> 
+            ((JavascriptExecutor) driver)
+                .executeScript("return document.readyState")
+                .equals("complete");
+
+        try {
+            wait.until(pageLoadCondition);
+        } catch (Exception e) {
+            System.out.println("Timeout waiting for page load.");
+        }
+    }
+
 	//Click
 	public void click(By by) {
 		waitClickable(by).click();
