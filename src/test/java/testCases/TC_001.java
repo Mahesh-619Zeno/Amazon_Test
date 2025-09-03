@@ -43,9 +43,9 @@ public class TC_001 extends BaseClass {
 			Assert.fail();
 		}
 		catch(Exception e) {
-			logger.error("Testcase Failed...");
-			logger.debug("Debug logs...");
-			Assert.fail();
+			logger.error("Testcase Failed due to exception: " + e.getMessage(), e);
+            logger.debug("Debug logs...");
+            Assert.fail("Testcase Failed due to exception: " + e.getMessage());
 		}
 		
 	}
