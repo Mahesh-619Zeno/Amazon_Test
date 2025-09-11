@@ -10,12 +10,14 @@ import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
@@ -27,47 +29,67 @@ public class BaseClass {
 	public Logger logger;
     public static WebDriver driver;
     
-	@BeforeClass(groups = { "Sanity", "Regression" ,"Master"})
-	@Parameters({"browser"})
-    void setup(@Optional("chrome")String br) throws IOException {
+	@BeforeClass(groups = { "Sanity", "Regression", "Master" })
+	@Parameters({ "browser" })
+	public void setup(@Optional("chrome") String br) throws IOException {
 		
 		logger = LogManager.getLogger(this.getClass());
+		loadProperties();
 		
-		FileReader file = new FileReader("./testdata/config.properties");
-		pr = new Properties();
-		pr.load(file);
-		
-		/*ChromeOptions options = new ChromeOptions();
-		options.addArguments("user-data-dir=/path/to/your/custom/profile");*/
-		
-		switch(br.toLowerCase()) {
-		case "chrome": driver = new ChromeDriver(); break;
-		case "edge": driver = new EdgeDriver(); break;
-		case "firefox": driver = new FirefoxDriver(); break;
-		default: System.out.println("Provide a valid browser name");return;
+		switch (br.toLowerCase()) {
+			case "chrome": 
+				driver = new ChromeDriver();
+				break;
+			case "edge": 
+				driver = new EdgeDriver();
+				break;
+			case "firefox": 
+				driver = new FirefoxDriver();
+				break;
+			default:
+				System.out.println("Provide a valid browser name");
+				return;
 		}
 			
 		driver.get(pr.getProperty("appurl"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		logger.info("Browser setup completed for: " + br);
 	}
 	
-	@AfterClass(groups = { "Sanity", "Regression" ,"Master"})
-	void tearDown() {
-		driver.quit();
+	@AfterClass(groups = { "Sanity", "Regression", "Master" })
+	public void tearDown() {
+		if (driver != null) {
+			driver.quit();
+			logger.info("Browser closed successfully.");
+		}
+	}
+	
+	private void loadProperties() throws IOException {
+		try (FileReader file = new FileReader("./testdata/config.properties")) {
+			pr = new Properties();
+			pr.load(file);
+			logger.info("Configuration properties loaded.");
+		}
 	}
 	
 	public String captureScreen(String tname) {
-		String timeStamp = new SimpleDateFormat("yyyymmddHHMMss").format(new Date()); 
+		String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()); 
 		
 		TakesScreenshot sc = (TakesScreenshot) driver;
 		File srcFile = sc.getScreenshotAs(OutputType.FILE);
 		
-		String targetFilePath = System.getProperty("user.dir")+"\\screenshot\\"+ tname+"_"+ timeStamp+".png";
+		String targetFilePath = System.getProperty("user.dir") + File.separator + "screenshot" + File.separator + tname + "_" + timeStamp + ".png";
 		File targetFile = new File(targetFilePath);
 		
-		srcFile.renameTo(targetFile);
-		return targetFilePath;
+		boolean renamed = srcFile.renameTo(targetFile);
+		if (!renamed) {
+			logger.warn("Failed to save screenshot: " + targetFilePath);
+		} else {
+			logger.info("Screenshot saved: " + targetFilePath);
+		}
 		
+		return targetFilePath;
 	}
 }
