@@ -13,6 +13,7 @@ public class TC_001 extends BaseClass {
 		try {
 		
 			logger.info("***** Started TC_001 *****");
+			logger.info("***** addding another logger comment for sync testing *****");
 			
 			String pageTitle = pr.getProperty("pagetitle");
 		    String CartHeader = pr.getProperty("cartheader");
