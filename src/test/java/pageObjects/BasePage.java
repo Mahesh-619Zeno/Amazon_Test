@@ -1,62 +1,68 @@
 package pageObjects;
 
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
 
-	static WebDriver driver;
-	WebDriverWait wait;
-	
-	public BasePage(WebDriver driver) {
-		BasePage.driver = driver;
-		PageFactory.initElements(driver, this);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-	}
-	
-	//Click
-	public void click(By by) {
-		waitClickable(by).click();
+    static WebDriver driver;
+    WebDriverWait wait;
+
+    public BasePage(WebDriver driver) {
+        BasePage.driver = driver;
+        PageFactory.initElements(driver, this);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
-    //Write Text
+
+    // Click on an element
+    public void click(By by) {
+        waitClickable(by).click();
+    }
+
+    // Write text into an element
     public void writeText(By by, String text) {
         waitVisibility(by).sendKeys(text);
     }
-    //Read Text
+
+    // Read text from an element
     public String readText(By by) {
         return waitVisibility(by).getText();
     }
-    //Wait
+
+    // Wait until element is visible
     public WebElement waitVisibility(By by) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
-    //Wait until invisible
+
+    // Wait until element is invisible
     public Boolean waitInvisibility(By by) {
         return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
     }
-    //Wait until clickable
+
+    // Wait until element is clickable
     public WebElement waitClickable(By by) {
         return wait.until(ExpectedConditions.elementToBeClickable(by));
     }
-    //Wait until completely removed from DOM
+
+    // Wait until element is completely removed from the DOM
     public boolean waitUntilRemoved(By by) {
         return wait.until(ExpectedConditions.numberOfElementsToBe(by, 0)).isEmpty();
     }
-    //Element Exists
+
+    // Check if element exists
     public boolean isExist(By by) {
-    	return !driver.findElements(by).isEmpty();
+        return !driver.findElements(by).isEmpty();
     }
-    //refresh
+
+    // Refresh the current page
     public static void refresh() {
-    	driver.navigate().refresh();
+        driver.navigate().refresh();
     }
-    
-	
 }
